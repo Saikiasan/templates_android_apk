@@ -1,0 +1,132 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --dark: #212529;
+}
+
+body {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  transition: all ease .8s !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body.bg-dark * {
+  color: #fff;
+}
+
+body.bg-dark .nav-link:hover, body.bg-dark .nav-link.active {
+  color: #83cf12;
+}
+
+main.main {
+  padding: 100px 0 100px 0;
+}
+
+.theme-switch {
+  width: 70px;
+  height: 30px;
+  background: var(--dark);
+  border-radius: 50px;
+  position: relative;
+}
+
+.bg-dark .theme-switch {
+  background: #fff;
+}
+
+.theme-switch .switch {
+  width: 24px;
+  height: 24px;
+  background: var(--white);
+  color: var(--black);
+  border-radius: 100%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  transition: 0.5s all ease;
+}
+
+.bg-dark .theme-switch .switch {
+  translate: 38px;
+  background: var(--dark);
+  color: var(--white);
+}
+
+#preloader {
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  background: var(--white);
+  display: flex;
+  background-repeat: repeat;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.bg-dark #preloader {
+  background: var(--dark);
+}
+
+/* #preloader::before {
+  content: '';
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: transparent;
+  border: 8px solid transparent;
+  border-top: 8px solid #ffffff;
+  border-radius: 50%;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+} */
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+footer .btn:hover {
+  color: var(--white);
+  background: transparent;
+}
+
+.btn-floating {
+  border-radius: 50%;
+}
+
+.btn-floating i {
+  --size: 1em;
+  height: var(--size);
+  width: var(--size);
+  padding: 1px; 
+  margin: 1px;
+}
+
+.list-group .list-group-item {
+  background: transparent;
+}
