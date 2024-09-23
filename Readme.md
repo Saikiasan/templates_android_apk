@@ -19,3 +19,5 @@ The app is available by the name `Template` and supports devices above Android 6
 - [ ] Initiate open testing
 - [ ] Add Advertisement sections
 - [ ] Analyse backend services
+
+[Web short Url](https://bit.ly/atomy_templates)
